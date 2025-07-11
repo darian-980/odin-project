@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    margin: 0%;
+    background-color: orangered;
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    color: black;
+}
+.main-text{
+    margin: 3rem;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 6rem;
+}
+.inner-box-text{
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    color: #212121;
+    font-weight: 600;
+}
+.background{
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+.logo{
+    position:fixed;
+    width: 30vw;
+    left: 10vw;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+body{
+    margin: 0%;
+}
+.white-divider{
+    background-color: #f9fafb;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+
+.white-divider-middle{
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+    position: absolute;
+    transform: translate(0, 30vh);
+    z-index: 1;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
+}
+.inner-field-box-left{
+    position: absolute;
+    color: #212121;
+    margin-left: 4rem;
+    margin-top: 6rem;
+}
+
+.inner-field-box-right{
+    position: absolute;
+    color: #212121;
+    margin-left: 20rem;
+    margin-top: 6rem;
+}
+
+.submit-button{
+    position: absolute;
+    margin-left: 4rem;
+    background-color: #cf6805;
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 20px;
+    transform: translate(0, 45vh);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.submit-button:active{
+    background-color: grey;
+}
+
+.button-text{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    font-size: 15px;
+}
+
+.already-signed-in{
+    position: absolute;
+    margin-left: 4rem;
+    font-weight: 500;
+    transform: translate(0, 52vh);
+    font-size: 17px;
+}
+
+#orange-highlight:link{
+    color: #cf6805;
+}
+
+#orange-highlight:visited{
+    color: purple;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
