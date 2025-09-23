@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main-bg{
+    background-color: #e3d5ca;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    /* place-items: center; */
+    
+}
+
+.middle-grid{
+    padding: 20px;
+    padding-top: 5vh;
+    grid-column: 1/2;
+    background-color: #f5ebe0;
+    margin: 0 auto;
+    min-height: 100vh;
+    filter: drop-shadow(0px 0px 1px #000000);
+    min-width: 300px;
+}
+
+.formClass{
+    line-height: 0.8;
+}
+
+.formClass > div > input{
+    margin-bottom: 1em;
+}
+
+.formClass > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.class-read{
+    justify-content:center;
+}
+
+#bookTable{
+    width: 100%;
+    
+}
+
+
