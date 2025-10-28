@@ -1,9 +1,32 @@
 import "./styles.css";
 import fishImage from "./fish-logo-smaller.png";
+import home from "./home.js";
+import menu from "./menu.js";
+import contact from "./contact.js";
+
 // import { container } from "webpack";
 
-// const navMenu = document.getElementById(`nav-menu`);
 
+function switchMenu() {
+    const delLowerMain = document.getElementById("lower-main"); // grab lower-main div so we can delete it
+    delLowerMain.remove(); // delete lower main so we can add a new one
+    console.log("removed lower-main div");
+    menu();
+};
+
+function switchHome() {
+    const delLowerMain = document.getElementById("lower-main"); // grab lower-main div so we can delete it
+    delLowerMain.remove(); // delete lower main so we can add a new one
+    console.log("removed lower-main div");
+    home();
+};
+
+function switchContact() {
+    const delLowerMain = document.getElementById("lower-main"); // grab lower-main div so we can delete it
+    delLowerMain.remove(); // delete lower main so we can add a new one
+    console.log("removed lower-main div");
+    contact();
+};
 
 const contentDiv = document.getElementById(`content`);
 
@@ -26,16 +49,25 @@ navMenu.appendChild(fakeFishSlot);
 
 const homeButton = document.createElement("button");
 homeButton.setAttribute("class", "nav-button");
+homeButton.addEventListener("click", function () {
+    switchHome();
+});
 homeButton.textContent = "Home";
 navMenu.appendChild(homeButton);
 
 const menuButton = document.createElement("button");
 menuButton.setAttribute("class", "nav-button");
+menuButton.addEventListener("click", function () {
+    switchMenu();
+});
 menuButton.textContent = "Menu";
 navMenu.appendChild(menuButton);
 
 const contactButton = document.createElement("button");
 contactButton.setAttribute("class", "nav-button");
+contactButton.addEventListener("click", function () {
+    switchContact();
+});
 contactButton.textContent = "Contact Us";
 navMenu.appendChild(contactButton);
 
@@ -63,37 +95,10 @@ findLocationMsg.setAttribute("class", "find-location-msg");
 findLocationMsg.textContent = "Find A Location Near You";
 navDivider.appendChild(findLocationMsg);
 
-
-const lowerMain = document.createElement("div");
-lowerMain.setAttribute("id", "lower-main");
-containerDiv.appendChild(lowerMain);
-
-const specialH1 = document.createElement("p");
-specialH1.setAttribute("class", "special-H1");
-specialH1.textContent = "Today's Special";
-lowerMain.appendChild(specialH1);
-
-const specialP = document.createElement("p");
-specialP.setAttribute("class", "special-p");
-specialP.textContent = "Today's special is a mouthwatering Grilled Lobster Tail Platter, featuring a succulent, buttery lobster tail grilled to perfection, served with a zesty lemon herb sauce. Accompanied by creamy garlic mashed potatoes and fresh, seasonal asparagus, this dish is a delightful blend of flavors that celebrates the ocean's finest. Available only today, come savor this coastal treat while it lasts!";
-lowerMain.appendChild(specialP);
-
-const imgGrid = document.createElement("div");
-imgGrid.setAttribute("class", "img-grid");
-lowerMain.appendChild(imgGrid);
-
-const bg1 = document.createElement("div");
-bg1.setAttribute("class", "background-color1");
-imgGrid.appendChild(bg1);
-
-const bg2 = document.createElement("div");
-bg2.setAttribute("class", "background-color2");
-imgGrid.appendChild(bg2);
-
-const bg3 = document.createElement("div");
-bg3.setAttribute("class", "background-color3");
-imgGrid.appendChild(bg3);
-
+(function(){
+    console.log(home);
+    home();
+})();
 
 
 
