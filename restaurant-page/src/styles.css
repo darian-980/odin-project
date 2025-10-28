@@ -88,6 +88,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   min-height: 85%;
   padding-top: 2em;
+  filter: drop-shadow(0px 0px 1px #000000);
 }
 
 .background-color1 {
@@ -168,4 +169,10 @@ body {
   white-space: pre;
   /*needed for line breaks */
   line-height: 2;
+}
+
+.img-grid>div>img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
 }
